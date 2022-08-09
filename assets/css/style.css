@@ -35,6 +35,26 @@ h2{
     text-align: center;
     height: 30vh;
 }
+/* score */
 .score{
     padding-top: 20px;
+}
+table{
+    font-size: 1.2rem;
+    color: darkmagenta;
+    border-radius: 2%;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    padding: 5px;
+    box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
+    border: 1px solid black;
+}
+.score-th{
+    padding: 10px 35px;
+    background-color: bisque;
+}
+.reset-div{
+    display: inline-flex;
+    flex-direction: row;
+    
 }
