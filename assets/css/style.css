@@ -79,6 +79,10 @@ table{
     border-radius: 2%;
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
+#reset-btn:hover{
+    background-color: chocolate;
+    color: white;
+}
 
 /* control area */
 .control-area {
@@ -89,7 +93,7 @@ table{
 }
 .btn-control{
     width: 20%;
-    height: 35px;
+    height: 7vh;
     text-align: center;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -100,4 +104,8 @@ table{
     border-radius: 2%;
     box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
+}
+.btn-control:hover{
+    background-color: chocolate;
+    color: white;
 }
