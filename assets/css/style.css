@@ -13,40 +13,49 @@ body {
     background: rgb(253, 250, 45);
     background: linear-gradient(0deg, rgba(253, 250, 45, 0.46011908181241246) 13%, rgba(34, 193, 195, 1) 87%);
 }
+
 /* Heading */
-h1,h2,h3{
+h1,
+h2,
+h3 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
     color: aliceblue;
 }
-h1{
+
+h1 {
     font-size: 52px;
     padding-top: 2.5%;
 }
-h2{
+
+h2 {
     color: blue;
     font-size: 26px;
 }
-h3{
+
+h3 {
     font-size: 26px;
     color: darkblue;
 }
+
 /* info section */
 
-.game-info{
+.game-info {
     height: 25vh;
     margin-top: 10px;
 }
+
 /* score */
-.score{
+.score {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 20px;
 }
-table{
+
+table {
     font-size: 1.2rem;
     color: darkmagenta;
     border-radius: 2%;
@@ -56,22 +65,26 @@ table{
     box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
     border: 1px solid black;
 }
-.score-th{
+
+.score-th {
     padding: 10px 35px;
     background-color: bisque;
 }
-.score-val{
+
+.score-val {
     padding: 10px 35px;
     background-color: aliceblue;
     color: black;
 }
+
 /* Reset button */
-.reset-div{
+.reset-div {
     display: inline-flex;
     flex-direction: row;
     margin-left: 20px;
 }
-#reset-btn{
+
+#reset-btn {
     width: 10vmin;
     height: 10vmin;
     font-size: 2rem;
@@ -79,7 +92,8 @@ table{
     border-radius: 2%;
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
-#reset-btn:hover{
+
+#reset-btn:hover {
     background-color: chocolate;
     color: white;
 }
@@ -91,7 +105,8 @@ table{
     justify-content: center;
     margin-top: 20px;
 }
-.btn-control{
+
+.btn-control {
     width: 20%;
     height: 7vh;
     text-align: center;
@@ -105,7 +120,25 @@ table{
     box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
-.btn-control:hover{
+
+.btn-control:hover {
     background-color: chocolate;
     color: white;
+}
+
+/* chose image area*/
+.image-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+.image-choice {
+    background-color: aliceblue;
+    margin-left: 2.5%;
+    height: 25vh;
+    width: 40vh;
 }
