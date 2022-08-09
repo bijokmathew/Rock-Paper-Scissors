@@ -13,7 +13,7 @@ body {
     background: linear-gradient(0deg, rgba(253, 250, 45, 0.46011908181241246) 13%, rgba(34, 193, 195, 1) 87%);
 }
 /* Heading */
-h1,h2{
+h1,h2,h3{
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
@@ -27,16 +27,22 @@ h2{
     color: blue;
     font-size: 26px;
 }
+h3{
+    font-size: 26px;
+    color: darkblue;
+}
 /* info section */
 
 .game-info{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 30vh;
+    height: 25vh;
+    margin-top: 10px;
 }
 /* score */
 .score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-top: 20px;
 }
 table{
@@ -53,8 +59,21 @@ table{
     padding: 10px 35px;
     background-color: bisque;
 }
+.score-val{
+    padding: 10px 35px;
+    background-color: aliceblue;
+    color: black;
+}
 .reset-div{
     display: inline-flex;
     flex-direction: row;
-    
+    margin-left: 20px;
+}
+#reset-btn{
+    width: 10vmin;
+    height: 10vmin;
+    font-size: 2rem;
+    background-color: burlywood;
+    border-radius: 2%;
+    box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
 }

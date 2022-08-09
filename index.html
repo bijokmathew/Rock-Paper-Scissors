@@ -15,8 +15,8 @@
         <h1>Rock, Paper, Scissor</h1>
     </header>
     <section class="game-info">
+        <h2>Score</h2>
         <div class="score">
-            <h2>Score</h2>
             <table>
                 <thead>
                     <tr>
@@ -26,18 +26,18 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td id="user-score">0</td>
-                        <td id="computer-score">0</td>
+                        <td id="user-score" class="score-val">0</td>
+                        <td id="computer-score" class="score-val">0</td>
                     </tr>
                 </tbody>
             </table>
             <div class="reset-div">
-                <button id="reset-btn">Reset</button>
+                <button id="reset-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
             </div>
         </div>
     </section>
     <section id="game-area">
-        <h3>message</h3>
+        <h3>Select Your Choice</h3>
         <div>
             <p>control area</p>
         </div>
@@ -46,6 +46,8 @@
         <div>computer</div>
     </section>
     <script src="assets/js/script.js"></script>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/8e0b0718bf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
