@@ -11,16 +11,33 @@
 </head>
 
 <body>
-    <section>
-        <header>
-            <h1>Rock, Paper, Scissor</h1>
-        </header>
-        <div>
-            <p>help reset score</p>
+    <header>
+        <h1>Rock, Paper, Scissor</h1>
+    </header>
+    <section class="game-info">
+        <div class="score">
+            <h2>Score</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Your Score</th>
+                        <th>Computer Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="user-score">0</td>
+                        <td id="computer-score">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="reset-div">    
+            <button id="reset-btn">Reset</button>
         </div>
     </section>
-    <section>
-        <h2></h2>
+    <section id="game-area">
+       <h3>message</h3>
         <div>
             <p>control area</p>
         </div>

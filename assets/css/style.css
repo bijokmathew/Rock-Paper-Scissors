@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Rokkitt', 'sans-serif';
+    height: 100vh;
+    background: rgb(253, 250, 45);
+    background: linear-gradient(0deg, rgba(253, 250, 45, 0.46011908181241246) 13%, rgba(34, 193, 195, 1) 87%);
+}
+/* Heading */
+h1,h2{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    color: aliceblue;
+}
+h1{
+    font-size: 52px;
+    padding-top: 2.5%;
+}
+h2{
+    color: blue;
+    font-size: 26px;
+}
+/* info section */
+
+.game-info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+}
+.score{
+    padding-top: 20px;
+}
