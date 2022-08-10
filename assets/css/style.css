@@ -26,7 +26,6 @@ h3 {
 
 h1 {
     font-size: 2.6rem;
-    padding-top: 2%;
 }
 
 h2 {
@@ -38,12 +37,16 @@ h3 {
     font-size: 1.1rem;
     color: darkblue;
 }
-
+/* header */
+#header{
+    height: 75px;
+    text-align: center;
+    padding-top: 30px;
+}
 /* info section */
 
 .game-info {
-    height: 25vh;
-    margin-top: 10px;
+    margin-top: 0.6rem;
 }
 
 /* score */
@@ -52,8 +55,7 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin:0 10px ;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 table {
@@ -62,18 +64,18 @@ table {
     border-radius: 2%;
     letter-spacing: 1.2px;
     font-weight: 600;
-    padding: 5px;
+    padding: 0.3rem;
     box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
     border: 1px solid black;
 }
 
 .score-th {
-    padding: 10px 35px;
+    padding: 0.6rem 2.2rem;
     background-color: bisque;
 }
 
 .score-val {
-    padding: 10px 35px;
+    padding: 0.6rem 2.2rem;
     background-color: aliceblue;
     color: black;
 }
@@ -82,7 +84,7 @@ table {
 .reset-div {
     display: inline-flex;
     flex-direction: row;
-    margin:0  20px ;
+    margin: 0 1.3rem;
 }
 
 #reset-btn {
@@ -99,7 +101,10 @@ table {
     color: white;
 }
 
-/* control area */
+/* control and game-area */
+#game-area{
+    margin-top: 30px;
+}
 .control-area {
     display: flex;
     flex-direction: row;
@@ -115,7 +120,7 @@ table {
     font-size: 0.9rem;
     letter-spacing: 4px;
     padding: 10px;
-    margin:0 20px;
+    margin: 0 20px;
     background-color: burlywood;
     border-radius: 2%;
     box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
@@ -126,8 +131,9 @@ table {
     background-color: chocolate;
     color: white;
 }
+
 /* Result message*/
-#result-msg{
+#result-msg {
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
@@ -136,6 +142,7 @@ table {
     font-weight: 900;
     color: darkred;
 }
+
 /* chose image area*/
 .image-area {
     display: flex;
@@ -149,17 +156,81 @@ table {
 .image-choice {
     background-color: aliceblue;
     margin: 0 1.5%;
-    
     height: 25vh;
     width: 40vh;
 }
+
 /* rules style */
-#rule{
+#rule {
     text-align: center;
     font-size: 1.5rem;
     padding: 20px;
 }
-#rule span{
-    font-size:1.2rem ;
+
+#rule span {
+    font-size: 1.2rem;
     text-decoration: underline;
+}
+
+/* media query */
+/* For small screens sizes from 420px wide and down */
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .game-info {
+        margin-top: 0.4rem;
+    }
+    .score {
+        margin: 0 2rem;
+    }
+
+    .score-th {
+        padding: 0.1rem 1.2rem;
+    }
+
+    .score-val {
+        padding: 0.2rem 1.2rem;
+    }
+
+    /* Reset button */
+    .reset-div {
+        margin: 0 0.9rem;
+    }
+
+    #reset-btn {
+        width: 6vh;
+        height: 6vh;
+        font-size: 1.5rem;
+    }
+
+    .btn-control {
+        width: 20vh;
+        height: 7vh;
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        padding: 5px;
+        margin: 0 5px;
+    }
+
+    /* Result message*/
+    #result-msg {
+        margin-top: 10px;
+    }
+
+    /* chose image area*/
+    .image-area {
+        margin-top: 20px;
+    }
+
+
 }
