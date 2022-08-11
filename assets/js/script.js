@@ -15,3 +15,19 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     } 
 })
+/**
+ * Reset the game by clearing the score and
+ * go to the intial state of the game
+ */
+function resetGame(){
+
+}
+/**
+ *This is main function which takes buttonType as a parameter
+ *  this funtion start after loading the DOM
+ * based on the button type continue the game 
+ * @param {*} buttonType 
+ */
+function runGame(buttonType){
+
+}
