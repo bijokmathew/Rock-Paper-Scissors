@@ -33,6 +33,8 @@ function resetGame(){
     //set the user and computer score to zero
     userScore.innerHTML="0";
     computerScore.innerText="0";
+    userChoiceImage.src=`assets/images/no-image.png`;
+    computerChoiceImage.src=`assets/images/no-image.png`;
 }
 /**
  *This is main function which takes buttonType as a parameter
@@ -50,7 +52,7 @@ function runGame(buttonType){
  * @param {*} buttonType 
  */
 function setUserChoiceImage(buttonType){
-
+    userChoiceImage.src=`assets/images/${buttonType}.png`
 }
 /**
  * This function set the image on the HTML 
