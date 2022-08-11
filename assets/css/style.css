@@ -135,6 +135,7 @@ table {
 /* Result message*/
 #result-msg {
     text-align: center;
+    display: none;
     margin-top: 20px;
     font-size: 18px;
     letter-spacing: 4px;
