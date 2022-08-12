@@ -54,6 +54,7 @@ function resetGame() {
     userChoiceImage.alt = "empty image";
     computerChoiceImage.src = `assets/images/no-image.png`;
     computerChoiceImage.alt = "empty image";
+    resultMessage.innerHTML='';
 }
 /**
  *This is main function which takes userChoice as a parameter
