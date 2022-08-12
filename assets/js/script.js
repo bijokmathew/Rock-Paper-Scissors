@@ -7,20 +7,36 @@ const resultMessage = document.getElementById('result-msg');
 const userChoiceImage = document.getElementById('user-image');
 const computerChoiceImage = document.getElementById('computer-image')
 // array for getting the computer selected image based on the random number
-const computerChoice = ["rock", "paper", "scissor"];
+const computerChoiceList = ["rock", "paper", "scissor"];
 // user and pc score 
 const userScore = document.getElementById('user-score');
 const computerScore = document.getElementById('computer-score')
-
+/* 0--> tie, 1--> user win, 2--> computer win
+    a) paper covers rocks 
+    b) rock crushes scissors
+    c) scissors cut paper
+    row -->user choice and column --> computer choice  
+*/
+const winTable = [
+    [0, 2, 1],
+    [1, 0, 2],
+    [2, 1, 0]
+]
+const winMessage = [
+    ["Same selection", "Paper covers rocks", "Rock crushes scissors"],
+    ["Paper covers rocks", "Same selection", "Scissors cut paper"],
+    ["Rock crushes scissors", "Scissors cut paper", "Same selection"]
+]
+const result = ["It is a tie !", "You win !!!", "Computer Win !!!"]
 /* Register event listener for all buttons after loading the DOM  */
 document.addEventListener('DOMContentLoaded', function () {
     for (let button of controlButtons) {
         button.addEventListener('click', function () {
-            let buttonType = this.getAttribute('data-type');
-            if (buttonType === "reset") {
+            let userChoice = this.getAttribute('data-type');
+            if (userChoice === "reset") {
                 resetGame();
             } else {
-                runGame(buttonType)
+                runGame(userChoice)
             }
         })
     }
@@ -45,27 +61,32 @@ function resetGame() {
  * based on the button type continue the game 
  * @param {*} buttonType 
  */
-function runGame(buttonType) {
-    setUserChoiceImage(buttonType);
-    generateComputerChoice();
+function runGame(userChoice) {
+    setUserChoiceImage(userChoice); 
+    let userChoiceIndex = computerChoiceList.indexOf(userChoice);
+    let computerChoice = generateComputerChoice();
+    setComputerChoiceImage(computerChoice);
+    let resultCode =checkResult(userChoiceIndex,computerChoice);
+    updateGameMessage(userChoiceIndex,computerChoice,resultCode)
+    updateScore(resultCode);
 }
 /**
  * This function takes buttonType as a parameter
  * And set the image on the HTML based on the buttonType
  * @param {*} buttonType 
  */
-function setUserChoiceImage(buttonType) {
-    userChoiceImage.src = `assets/images/${buttonType}.png`
-    userChoiceImage.alt = buttonType;
+function setUserChoiceImage(userChoice) {
+    userChoiceImage.src = `assets/images/${userChoice}.png`
+    userChoiceImage.alt = userChoice;
 }
 /**
  * This function set the image on the HTML 
  * based on the computer choice
  * @param {*} ComputerRandomChoice
  */
-function setComputerChoiceImage(ComputerRandomChoice) {
-    computerChoiceImage.src = `assets/images/` + computerChoice[ComputerRandomChoice] + `.png`;
-    computerChoiceImage.alt = computerChoice[ComputerRandomChoice];
+function setComputerChoiceImage(ComputerChoice) {
+    computerChoiceImage.src = `assets/images/` + computerChoiceList[ComputerChoice] + `.png`;
+    computerChoiceImage.alt = computerChoiceList[ComputerChoice];
 }
 /**
  * This function generate the computer choice
@@ -73,6 +94,25 @@ function setComputerChoiceImage(ComputerRandomChoice) {
  * 
  */
 function generateComputerChoice() {
-    let ComputerRandomChoice = Math.floor(Math.random() * computerChoice.length);
-    setComputerChoiceImage(ComputerRandomChoice);
+    return Math.floor(Math.random() * computerChoiceList.length);
+}
+/**
+ * checkResult accept user and computer choice paremeter 
+ * verify who win the game from winTable array
+ * @param {*} userChoice 
+ * @param {*} computerChoice 
+ */
+function checkResult(userChoice,computerChoice){
+    console.log(userChoice , computerChoice);
+    return winTable[userChoice][computerChoice];
+}
+function updateGameMessage(userChoice,computerChoice,resultCode){
+    let message = winMessage[userChoice][computerChoice];
+    let finalResult = result[resultCode];
+    resultMessage.innerHTML=`${message}     :  ${finalResult} `;
+    console.log(resultMessage.innerHTML);
+
+}
+function updateScore(resultCode){
+
 }
