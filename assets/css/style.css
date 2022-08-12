@@ -17,7 +17,8 @@ body {
 /* Heading */
 h1,
 h2,
-h3 {
+h3,
+h4 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
@@ -36,6 +37,15 @@ h2 {
 h3 {
     font-size: 1.1rem;
     color: darkblue;
+}
+h4{
+    color: darkblue;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
 /* header */
 #header{
@@ -123,7 +133,6 @@ table {
     margin: 0 20px;
     background-color: burlywood;
     border-radius: 2%;
-    box-shadow: 5px 5px 2px hsl(60, 2%, 12%);
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
 
@@ -150,14 +159,14 @@ table {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-
 }
 
 .image-choice {
     background-color: aliceblue;
     margin: 0 1.5%;
-    height: 25vh;
+    height: 28vh;
     width: 40vh;
+    box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
 .image-choice img {
     width: 100%;
