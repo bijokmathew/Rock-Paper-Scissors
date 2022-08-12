@@ -56,10 +56,10 @@ function resetGame() {
     computerChoiceImage.alt = "empty image";
 }
 /**
- *This is main function which takes buttonType as a parameter
+ *This is main function which takes userChoice as a parameter
  *  this funtion start after loading the DOM
  * based on the button type continue the game 
- * @param {*} buttonType 
+ * @param {*} userChoice 
  */
 function runGame(userChoice) {
     setUserChoiceImage(userChoice); 
@@ -71,9 +71,9 @@ function runGame(userChoice) {
     updateScore(resultCode);
 }
 /**
- * This function takes buttonType as a parameter
+ * This function takes userChoice as a parameter
  * And set the image on the HTML based on the buttonType
- * @param {*} buttonType 
+ * @param {*} userChoice 
  */
 function setUserChoiceImage(userChoice) {
     userChoiceImage.src = `assets/images/${userChoice}.png`
@@ -82,7 +82,7 @@ function setUserChoiceImage(userChoice) {
 /**
  * This function set the image on the HTML 
  * based on the computer choice
- * @param {*} ComputerRandomChoice
+ * @param {*} ComputerChoice
  */
 function setComputerChoiceImage(ComputerChoice) {
     computerChoiceImage.src = `assets/images/` + computerChoiceList[ComputerChoice] + `.png`;
@@ -106,6 +106,13 @@ function checkResult(userChoice,computerChoice){
     console.log(userChoice , computerChoice);
     return winTable[userChoice][computerChoice];
 }
+/**
+ * This function upadte the message to the player based on
+ * the game result
+ * @param {*} userChoice 
+ * @param {*} computerChoice 
+ * @param {*} resultCode 
+ */
 function updateGameMessage(userChoice,computerChoice,resultCode){
     let message = winMessage[userChoice][computerChoice];
     let finalResult = result[resultCode];
@@ -113,6 +120,21 @@ function updateGameMessage(userChoice,computerChoice,resultCode){
     console.log(resultMessage.innerHTML);
 
 }
+/**
+ * This function update the user and computer score
+ * resultCode == 0 --> not update the score
+ * resultCode == 1 --> update the user score
+ * resultCode == 2 --> not update the computer score
+ * @param {*} resultCode 
+ */
 function updateScore(resultCode){
-
+    let userScores= parseInt(userScore.innerHTML);
+    let computerScores=parseInt(computerScore.innerText);
+    if(resultCode == 1){
+        userScores++;
+    } else if(resultCode == 2){
+        computerScores++;
+    }
+    userScore.innerHTML=userScores;
+    computerScore.innerHTML=computerScores;
 }
