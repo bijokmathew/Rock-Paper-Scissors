@@ -23,8 +23,14 @@ The Live Game can be accessed [HERE!](https://bijokmathew.github.io/Rock-Paper-S
     - [Design](#design)
       - [Typography](#typography)
       - [Images](#images)
+    - [Wireframes](#wireframes)
   - [Features](#features)
     - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+  - [UX Stories Testing](#ux-stories-testing)
+    - [Bugs](#bugs)
+    - [Validator Testing](#validator-testing)
+  - [Development and Deployment](#development-and-deployment)
 
 ## UX
 
@@ -97,6 +103,17 @@ The [Google Font Open Sans]('https://fonts.googleapis.com/css2?family=Rokkitt&di
 
 Images has been chosen in accordance to colour and content. The purpose of the website is to give a friendly look and express quality. Images has been sized in order to match design.
 
+### Wireframes
+
+- Desktop
+![Desktop](assets/docs/wireframes/desktop.png)
+
+- Tablet
+![Tablet](assets/docs/wireframes/tablet.png)
+
+- Mobile
+![Mobile](assets/docs/wireframes/mobile.png)
+
 [Back to top](#rock-paper-scissors)
 
 ## Features 
@@ -166,6 +183,81 @@ The chosen option displays a humorous picture of the real choice.
 
 The Rule section gives an overview of the game rules.
 </details>
+### Future Features
+
+- To add different level for the game and more options.
+- To ensure return and new visitors by sharing their high scores or victories on social media.
+- To storea player name and their higher score
+  
 [Back to top](#rock-paper-scissors)
 
+## UX Stories Testing 
+
+Below are website images for reference with the UX Stories Testing.
+
+![alt text](assets/images/readme-images/)
+![alt text](assets/images/readme-images/)
+![alt text](assets/images/readme-images/)
+![alt text](assets/images/readme-images/)
+![alt text](assets/images/readme-images/)
+
+1. As a new visitor, I want to know how to play the game.
+
+    - The user can see the game rules always on rules area on the bottum side.
+    - The user can see all the control button and it is a self explanatory.
+
+2. As a new user, I want to know the scores of the game.
+
+    - The user can see the player's and computer score after each game.
+
+3. As a repeat visitor, I want to restart the game at some point.
+
+    - The user can use 'reset' button.
+    - After selecting the 'reset' button it clears the scores and message area.
+    - In the future I would like to add an option to change the levels of game.
+
+
+4. As a repeat visitor, I want to see message who won and why .
+
+    - Message section clearly display who won the game and reason after each play
+   
+5. As a user, I want to see the player and computer selections
+   - Image display choice section with respective label like user and computer choice   
+     display the user selected and computer choice.
+  
+[Back to top](#Easy-Life-Tips)
+
+### Bugs 
+
+During the development stage, found many minor and major issues .The following bugs took time to resolve.
+
+1. During Responsive test case, 
+2. 
+ 
+### Validator Testing 
+
+At each stage of the wesite development various types testing was executed to find the issues by using using Chrom Dev Tools.
+After the completed version of the website, used three forms of validations to verify the code stability. Also carried out the responsive test for different screen resolution by using chrome tool. 
+
+- HTML
+  - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbijokmathew.github.io%2Ftips-for-easylife%2F)
+
+![W3C HTML Validator](assets/images/readme-images/w3-html-validator.png)
+
+- CSS
+  - No errors were returned when passing through the official [(Jigsaw validator)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbijokmathew.github.io%2Ftips-for-easylife%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+![Jigsaw validator](assets/images/readme-images/jigsaw-validator.png)
+
+- Lighthouse testing
+
+![Lighthouse testing score](assets/images/readme-images/lighthouse-test-score.png)
+
+- Java script
+  - JavaScript was tested using [Beautifytools](https://beautifytools.com/javascript-validator.php).
+  ![Javascript Validator](assets/docs/testing/javascript-validator.png)
+
+[Back to top](#rock-paper-scissors)
+
+## Development and Deployment
 
