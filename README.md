@@ -112,14 +112,14 @@ Rock Paper Scissor is a single page game website that consists of these sections
 
 ### Existing Features
 
-<details><summary> Header </summary>
+<details><summary> Header section </summary>
 
 ![Header](assets/images/header.png)
 
 The Header at the top of the page features a contrasting font that makes it stand out and prominently displays the game's title.
 
 </details>
-<details><summary> The Rules, Reset button and Score Area </summary>
+<details><summary> The Rules, Reset button and Score section </summary>
 
 ![Scores and reset button](assets/images/)
 
@@ -134,7 +134,7 @@ When clicked, it resets the scores to 0 and removes the choices and the result f
 
 </details>
 
-<details><summary> Control Area </summary>
+<details><summary> Control section </summary>
 
 ![Control button](assets/images)
 
@@ -144,7 +144,28 @@ The computer generate an automatic random play when the player clicks on any of 
 Each button also includes a hoover and an active element for the assistance of users.
 
 </details>
+<details><summary> Result message section </summary>
 
+![Result](assets/images/)
+
+The winning decision based on the game's rules is also displayed after each round.
+It's also beneficial for new users because they can learn the game's rules while they play.
+</details>
+<details><summary> User vs Computer selection section </summary>
+
+![User selection vs Computer selection](assets/images/)
+
+The left box displays the player's choice, while the right box displays the computers. This facilitates comparison.
+
+The chosen option displays a humorous picture of the real choice.
+
+</details>
+<details><summary> The Rules section </summary>
+
+![Rules](assets/images/)
+
+The Rule section gives an overview of the game rules.
+</details>
 [Back to top](#rock-paper-scissors)
 
 
