@@ -23,6 +23,8 @@ The Live Game can be accessed [HERE!](https://bijokmathew.github.io/Rock-Paper-S
     - [Design](#design)
       - [Typography](#typography)
       - [Images](#images)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
 
 ## UX
 
@@ -94,6 +96,54 @@ The [Google Font Open Sans]('https://fonts.googleapis.com/css2?family=Rokkitt&di
 #### Images
 
 Images has been chosen in accordance to colour and content. The purpose of the website is to give a friendly look and express quality. Images has been sized in order to match design.
+
+[Back to top](#rock-paper-scissors)
+
+## Features 
+
+Rock Paper Scissor is a single page game website that consists of these sections:
+
+ - Header (Game title)
+ - Summary section which has user and computer score section and 'reset' button 
+ - Control section which has three buttons to control games
+ - Message section  
+ - Image area which has two part user selection and computer selection image area
+ - Rule section
+
+### Existing Features
+
+<details><summary> Header </summary>
+
+![Header](assets/images/header.png)
+
+The Header at the top of the page features a contrasting font that makes it stand out and prominently displays the game's title.
+
+</details>
+<details><summary> The Rules, Reset button and Score Area </summary>
+
+![Scores and reset button](assets/images/)
+
+- Scores area:
+
+The player's score is on the left, increasing after each player's win.
+The right shows the computer's score, which also updates after each win.
+
+- Reset button:
+  
+When clicked, it resets the scores to 0 and removes the choices and the result from the game area.
+
+</details>
+
+<details><summary> Control Area </summary>
+
+![Control button](assets/images)
+
+The control section contains the game options that the player can select: Rock, Paper and Scissors.
+The computer generate an automatic random play when the player clicks on any of the above button.
+
+Each button also includes a hoover and an active element for the assistance of users.
+
+</details>
 
 [Back to top](#rock-paper-scissors)
 
