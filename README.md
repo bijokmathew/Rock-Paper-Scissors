@@ -32,6 +32,10 @@ The Live Game can be accessed [HERE!](https://bijokmathew.github.io/Rock-Paper-S
     - [Bugs](#bugs)
     - [Validator Testing](#validator-testing)
   - [Development and Deployment](#development-and-deployment)
+    - [Using GitHub Pages](#using-github-pages)
+    - [How to Fork it](#how-to-fork-it)
+    - [How to Clone it](#how-to-clone-it)
+    - [Making a Local Clone](#making-a-local-clone)
 
 ## UX
 
@@ -278,4 +282,42 @@ After the completed version of the website, used three forms of validations to v
 [Back to top](#rock-paper-scissors)
 
 ## Development and Deployment
+
+The development environment used for this project is GitPod and also used github version control tool to stote the project.Github help to keep track each version and easily track the changes made to the source code. The GitPod environment was created using a template provided by Code Institute.
+
+The live version of the project is deployed at GitHub pages.
+
+### Using GitHub Pages
+In the GitHub Repository from the project https://github.com/bijokmathew/Rock-Paper-Scissors 
+
+1. Click the 'Settings' Tab.
+2. Scroll Down to the Git Hub Pages Heading.
+3. Select 'Main Branch' as the source.
+4. The Page will reload 'Settings' again.
+5. Scroll to GitHub pages heading and there will now be a clickable link https://bijokmathew.github.io/Rock-Paper-Scissors/
+6. Click the link for the live deployed page.
+
+### How to Fork it
+1. On GitHub, go to [rock-paper-scissors](https://github.com/bijokmathew/Rock-Paper-Scissors).
+2. In the top right, click "Fork".
+
+### How to Clone it
+1. Go to the main page of the repository.
+3. Above the file list, click "Code".
+4. Select HTTPS, SSH, or GitHub CLI and then click copy to clone it.
+5. Open Git Bash.
+6. Change the location of your cloned repository.
+7. Type `git clone` and then paste the URL you copied.
+8. Press “Enter” to create your clone.
+
+### Making a Local Clone
+1. Locate the [Repository](https://github.com/bijokmathew/Rock-Paper-Scissors).
+2. Select Clone or Download from tab "Code".
+3. Copy the Git URL from the dialogue box.
+4. Open a terminal window and go to specific directory.
+5. Change the location to where you want the cloned directory to be.
+6. Type `git clone`, and then paste the URL you copied.
+7. Press Enter, and your local clone will be created.
+
+[Back to top](#rock-paper-scissors)
 
