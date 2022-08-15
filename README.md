@@ -27,6 +27,7 @@ The Live Game can be accessed [HERE!](https://bijokmathew.github.io/Rock-Paper-S
   - [Features](#features)
     - [Existing Features](#existing-features)
     - [Future Features](#future-features)
+  - [Technologies used](#technologies-used)
   - [UX Stories Testing](#ux-stories-testing)
     - [Bugs](#bugs)
     - [Validator Testing](#validator-testing)
@@ -191,6 +192,23 @@ The Rule section gives an overview of the game rules.
   
 [Back to top](#rock-paper-scissors)
 
+## Technologies used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- JavaScript: To create an interactive game that allows users to interact with data.
+- Font Awesome - Used to provide in the Hacks section and also in the Footer.
+- Chrome Dev Tools - Used to check my work periodically, debug my code when needed and also test the responsiveness of my website.
+- GitHub - Used to store my code after pushing from Gitpod.
+- GitPod - Used as a development environment.
+- Git - Used for version control of my code.
+- Balsamic- Used to create the wireframes for the project.
+- Google Fonts - Used to style my website fonts.
+- W3C Markup Validation Service - Used to validate all of my HTML code.
+- W3C CSS Validation Service - Used to validate all of my CSS code.
+- Optimizilla Image Compressor - Used to compress the images.
+- Dirty Markup Formatter - Used to standardise and format my HTML and CSS code.
+  
 ## UX Stories Testing 
 
 Below are website images for reference with the UX Stories Testing.
