@@ -36,6 +36,11 @@ The Live Game can be accessed [HERE!](https://bijokmathew.github.io/Rock-Paper-S
     - [How to Fork it](#how-to-fork-it)
     - [How to Clone it](#how-to-clone-it)
     - [Making a Local Clone](#making-a-local-clone)
+  - [Content](#content)
+  - [Media](#media)
+  - [Credits](#credits)
+    - [For code inspiration, design inputs, help and advice. Many thanks to:](#for-code-inspiration-design-inputs-help-and-advice-many-thanks-to)
+    - [Great sources](#great-sources)
 
 ## UX
 
@@ -318,6 +323,44 @@ In the GitHub Repository from the project https://github.com/bijokmathew/Rock-Pa
 5. Change the location to where you want the cloned directory to be.
 6. Type `git clone`, and then paste the URL you copied.
 7. Press Enter, and your local clone will be created.
+
+[Back to top](#rock-paper-scissors)
+## Content 
+
+All content for the website taken from  Google and wikipedia
+
+## Media
+
+- All Icons used are from FontAwesome (https://fontawesome.com/)
+
+- All images used in the website were found on [Freepik](https://www.freepik.com/free-vector)
+
+## Credits 
+
+### For code inspiration, design inputs, help and advice. Many thanks to:
+
+Martina Terlevic
+ - My mentor at Code Institute and she guided me throught the project.
+ - Friends and Teachers at Code Institute: Thank you for all your knowledge and insight.
+ - Walkthrough project ”Love Maths” and "Portfolio Project Scope" has provided  inspiration and knowledge.
+
+### Great sources
+
+Sites that has provided me with knowledge and information that has been vital to this project:
+
+- https://www.w3schools.com/
+- https://stackoverflow.com
+- https://learn.codeinstitute.net/dashboard 
+- https://www.youtube.com
+- Flexbox: [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- Body background gradient: [ColorSpace](https://mycolor.space/)
+     
+
+Top screenshot in this ReadMe was made using:
+
+http://ami.responsivedesign.is/
+
+Best regards
 
 [Back to top](#rock-paper-scissors)
 
