@@ -1,4 +1,5 @@
 /* Declare constants for DOM elements */
+const controlButtons = document.getElementsByTagName('button');
 //result message pop up
 const resultMessage = document.getElementById('result-msg');
 // user and pc selection image display
