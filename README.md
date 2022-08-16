@@ -264,7 +264,7 @@ At each stage of the wesite development various types testing was executed to fi
 After the completed version of the website, used three forms of validations to verify the code stability. Also carried out the responsive test for different screen resolution by using chrome tool. 
 
 - HTML
-  - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbijokmathew.github.io%2Ftips-for-easylife%2F)
+  - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbijokmathew.github.io%2FRock-Paper-Scissors%2F)
 
 ![W3C HTML Validator](assets/images/readme-images/w3-html-validator.png)
 

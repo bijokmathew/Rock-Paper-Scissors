@@ -1,16 +1,14 @@
 /* Declare constants for DOM elements */
-const controlButtons = document.getElementsByTagName('button');
-const resetButton = document.getElementById('reset-btn');
 //result message pop up
 const resultMessage = document.getElementById('result-msg');
 // user and pc selection image display
 const userChoiceImage = document.getElementById('user-image');
-const computerChoiceImage = document.getElementById('computer-image')
+const computerChoiceImage = document.getElementById('computer-image');
 // array for getting the computer selected image based on the random number
 const computerChoiceList = ["rock", "paper", "scissor"];
 // user and pc score 
 const userScore = document.getElementById('user-score');
-const computerScore = document.getElementById('computer-score')
+const computerScore = document.getElementById('computer-score');
 /* 0--> tie, 1--> user win, 2--> computer win
     a) paper covers rocks 
     b) rock crushes scissors
@@ -21,13 +19,13 @@ const winTable = [
     [0, 2, 1],
     [1, 0, 2],
     [2, 1, 0]
-]
+];
 const winMessage = [
     ["Same selection", "Paper covers rocks", "Rock crushes scissors"],
     ["Paper covers rocks", "Same selection", "Scissors cut paper"],
     ["Rock crushes scissors", "Scissors cut paper", "Same selection"]
-]
-const result = ["It is a tie !", "You win !!!", "Computer Win !!!"]
+];
+const result = ["It is a tie !", "You win !!!", "Computer Win !!!"];
 /* Register event listener for all buttons after loading the DOM  */
 document.addEventListener('DOMContentLoaded', function () {
     for (let button of controlButtons) {
@@ -36,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (userChoice === "reset") {
                 resetGame();
             } else {
-                runGame(userChoice)
+                runGame(userChoice);
             }
-        })
+        });
     }
-})
+});
 /**
  * Reset the game by clearing the score ,set default(empty-image) to
  * both user choice and computer choice images
@@ -68,7 +66,7 @@ function runGame(userChoice) {
     let computerChoice = generateComputerChoice();
     setComputerChoiceImage(computerChoice);
     let resultCode =checkResult(userChoiceIndex,computerChoice);
-    updateGameMessage(userChoiceIndex,computerChoice,resultCode)
+    updateGameMessage(userChoiceIndex,computerChoice,resultCode);
     updateScore(resultCode);
 }
 /**
@@ -77,7 +75,7 @@ function runGame(userChoice) {
  * @param {*} userChoice 
  */
 function setUserChoiceImage(userChoice) {
-    userChoiceImage.src = `assets/images/${userChoice}.png`
+    userChoiceImage.src = `assets/images/${userChoice}.png`;
     userChoiceImage.alt = userChoice;
 }
 /**
