@@ -1,5 +1,5 @@
 # Rock, Paper, Scissors
-![Responsive screenshot](assets/images/no-image.png)
+![Responsive screenshot](assets/images/readme/responsiv-image.png)
 
 This is a hand game orginated in China, ushally participate two people and it is a fun game.It has three possible outcomes: a draw, a win or a loss. A player who decides to play rock will beat another player who has chosen scissors ("rock crushes scissor) but will lose to one who has played paper ("paper covers rock"), a play of paper will lose to a play of scissors ("scissors cuts paper"). If both players choose the same shape, the game is tied
 
@@ -101,9 +101,6 @@ Users may play a fun and exciting game of Rock, Paper, Scissors against the comp
  Main aim is to create a interactive clean looking website where there is a balance between colors, images and functionality.
 
  Rock Paper Scisssors is a single page game website has header, score, control buttons, computer and user choice image areas and finally rule sections. 'Refresh' button is used to reset the back to start mode. 
-
- Wireframes : 
-    ![Wireframe Roack Paper Scissors](assets/images/readme-images/)
   
 #### Typography
 
@@ -327,7 +324,7 @@ In the GitHub Repository from the project https://github.com/bijokmathew/Rock-Pa
 [Back to top](#rock-paper-scissors)
 ## Content 
 
-All content for the website taken from  Google and wikipedia
+All content for the website taken from  Google and Wikipedia
 
 ## Media
 
