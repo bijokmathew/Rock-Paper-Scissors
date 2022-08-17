@@ -113,13 +113,16 @@ Images has been chosen in accordance to colour and content. The purpose of the w
 ### Wireframes
 
 - Desktop
-![Desktop](assets/docs/wireframes/desktop.png)
+  
+![Desktop](assets/images/readme/desktop.png)
 
 - Tablet
-![Tablet](assets/docs/wireframes/tablet.png)
+  
+![Tablet](assets/images/readme/tablet.png)
 
 - Mobile
-![Mobile](assets/docs/wireframes/mobile.png)
+  
+![Mobile](assets/images/readme/mobile.png)
 
 [Back to top](#rock-paper-scissors)
 
