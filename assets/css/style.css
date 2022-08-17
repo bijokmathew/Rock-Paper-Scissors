@@ -162,7 +162,7 @@ table {
 .image-choice {
     background-color: aliceblue;
     margin: 0 1.5%;
-    height: 28vh;
+    height: 30vh;
     width: 40vh;
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
@@ -170,8 +170,10 @@ table {
 .image-choice img {
     width: 100%;
     height: 25vh;
+    aspect-ratio: 1.29;
     max-width: 40vh;
-    object-fit: fill;
+    padding: 5px 0;
+    object-fit: contain;
 }
 
 /* rules style */
