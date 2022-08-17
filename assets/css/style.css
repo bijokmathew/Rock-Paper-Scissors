@@ -17,8 +17,7 @@ body {
 /* Heading */
 h1,
 h2,
-h3,
-h4 {
+h3 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
@@ -30,15 +29,11 @@ h1 {
 }
 
 h2 {
-    color: blue;
-    font-size: 1.4rem;
-}
-
-h3 {
     font-size: 1.1rem;
     color: darkblue;
 }
-h4{
+
+h3 {
     color: darkblue;
     font-size: 0.7rem;
     letter-spacing: 2px;
@@ -195,10 +190,6 @@ table {
     }
 
     h2 {
-        font-size: 1.3rem;
-    }
-
-    h3 {
         font-size: 0.9rem;
     }
 
