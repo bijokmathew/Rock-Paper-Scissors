@@ -42,12 +42,14 @@ h3 {
     border-radius: 2%;
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
+
 /* header */
-#header{
+#header {
     height: 75px;
     text-align: center;
     padding-top: 30px;
 }
+
 /* info section */
 
 .game-info {
@@ -107,9 +109,10 @@ table {
 }
 
 /* control and game-area */
-#game-area{
+#game-area {
     margin-top: 30px;
 }
+
 .control-area {
     display: flex;
     flex-direction: row;
@@ -163,6 +166,7 @@ table {
     width: 40vh;
     box-shadow: 10px 10px 14px 1px rgb(0 0 0 / 20%);
 }
+
 .image-choice img {
     width: 100%;
     height: 25vh;
@@ -196,6 +200,7 @@ table {
     .game-info {
         margin-top: 0.4rem;
     }
+
     .score {
         margin: 0 2rem;
     }
@@ -237,6 +242,18 @@ table {
     .image-area {
         margin-top: 20px;
     }
+}
 
+/* For small screens sizes from 300px wide and down */
+@media screen and (max-width:300px) {
 
+    h3 {
+
+        letter-spacing: 0;
+    }
+
+    .score-th {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
 }
