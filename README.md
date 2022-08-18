@@ -222,11 +222,12 @@ The Rule section gives an overview of the game rules.
 
 Below are website images for reference with the UX Stories Testing.
 
-![alt text](assets/images/readme-images/)
-![alt text](assets/images/readme-images/)
-![alt text](assets/images/readme-images/)
-![alt text](assets/images/readme-images/)
-![alt text](assets/images/readme-images/)
+![alt text](assets/images/readme/header.png)
+![alt text](assets/images/readme/score-reset.png)
+![alt text](assets/images/readme/control-section.png)
+![alt text](assets/images/readme/win-message-area.png)
+![alt text](assets/images/readme/user-computer-selection.png)
+![alt text](assets/images/readme/Rule-section.png)
 
 1. As a new visitor, I want to know how to play the game.
 
@@ -258,8 +259,9 @@ Below are website images for reference with the UX Stories Testing.
 
 During the development stage, found many minor and major issues .The following bugs took time to resolve.
 
-1. During Responsive test case, 
-2. 
+1. Lighthouse issue image ratio issue
+   solution : 
+
  
 ### Validator Testing 
 
@@ -269,16 +271,16 @@ After the completed version of the website, used three forms of validations to v
 - HTML
   - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbijokmathew.github.io%2FRock-Paper-Scissors%2F)
 
-![W3C HTML Validator](assets/images/readme-images/w3-html-validator.png)
+![W3C HTML Validator](assets/images/readme/w3-html-validator.png)
 
 - CSS
   - No errors were returned when passing through the official [(Jigsaw validator)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbijokmathew.github.io%2Ftips-for-easylife%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-![Jigsaw validator](assets/images/readme-images/jigsaw-validator.png)
+![Jigsaw validator](assets/images/readme/jigsaw-validator.png)
 
 - Lighthouse testing
 
-![Lighthouse testing score](assets/images/readme-images/lighthouse-test-score.png)
+![Lighthouse testing score](assets/images/readme/lighthouse-test-score.png)
 
 - Java script
   - JavaScript was tested using [Beautifytools](https://beautifytools.com/javascript-validator.php).
