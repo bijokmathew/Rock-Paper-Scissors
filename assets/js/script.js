@@ -103,7 +103,6 @@ function generateComputerChoice() {
  * @param {*} computerChoice 
  */
 function checkResult(userChoice,computerChoice){
-    console.log(userChoice , computerChoice);
     return winTable[userChoice][computerChoice];
 }
 /**
@@ -117,8 +116,6 @@ function updateGameMessage(userChoice,computerChoice,resultCode){
     let message = winMessage[userChoice][computerChoice];
     let finalResult = result[resultCode];
     resultMessage.innerHTML=`${message}     :  ${finalResult} `;
-    console.log(resultMessage.innerHTML);
-
 }
 /**
  * This function update the user and computer score
