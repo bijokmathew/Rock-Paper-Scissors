@@ -254,14 +254,14 @@ Below are website images for reference with the UX Stories Testing.
    - Image display choice section with respective label like user and computer choice   
      display the user selected and computer choice.
   
-[Back to top](#Easy-Life-Tips)
+[Back to top](#rock-paper-scissors)
 
 ### Bugs 
 
 During the development stage, found many minor and major issues .The following bugs took time to resolve.
 
 1. Lighthouse issue image ratio issue
-   solution : 
+   solution : Intially i tried to change the image resolution by using online tool but still issue not resolved so after refering the docs and understand the issue in the code so I modified the width and height of the image in css file
 
  
 ### Validator Testing 
@@ -285,7 +285,7 @@ After the completed version of the website, used three forms of validations to v
 
 - Java script
   - JavaScript was tested using [Beautifytools](https://beautifytools.com/javascript-validator.php).
-  ![Javascript Validator](assets/docs/testing/javascript-validator.png)
+  ![Javascript Validator](assets/images/readme/javascript-validator.png)
 
 [Back to top](#rock-paper-scissors)
 
