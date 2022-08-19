@@ -12,10 +12,12 @@
 
 <body>
     <header>
+        <!-- Title of game-->
         <div id="header">
             <h1>Rock, Paper, Scissors</h1>
         </div>
     </header>
+    <!-- score area -->
     <div class="game-info">
         <div class="score">
             <table>
@@ -33,18 +35,23 @@
                 </tbody>
             </table>
             <div class="reset-div">
-                <button id="reset-btn" data-type="reset" aria-label="reset"><i class="fa-solid fa-arrows-rotate"></i></button>
+                <button id="reset-btn" data-type="reset" aria-label="reset"><i
+                        class="fa-solid fa-arrows-rotate"></i></button>
             </div>
         </div>
     </div>
     <section id="game-area">
         <h2>Select Your Choice</h2>
+        <!-- Control buttons-->
         <div class="control-area">
             <button id="btn-rock" class="btn-control" data-type="rock" aria-label="selected rock">ROCK</button>
             <button id="btn-paper" class="btn-control" data-type="paper" aria-label="selected paper">PAPER</button>
-            <button id="btn-scissors" class="btn-control" data-type="scissor" aria-label="selected scissor">Scissors</button>
+            <button id="btn-scissors" class="btn-control" data-type="scissor"
+                aria-label="selected scissor">Scissors</button>
         </div>
+        <!-- Result message-->
         <div id="result-msg"></div>
+        <!-- User and computer choice image display-->
         <div class="image-area">
             <div class="image-choice">
                 <h3>Your choice</h3>
@@ -57,6 +64,7 @@
         </div>
         <div id="rule">Rules : <span>Scissors cut Paper | Paper covers Rock | Rock blunts Scissors </span></div>
     </section>
+    <!-- script for the game-->
     <script src="assets/js/script.js"></script>
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/8e0b0718bf.js" crossorigin="anonymous"></script>

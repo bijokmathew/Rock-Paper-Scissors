@@ -1,4 +1,5 @@
 /* Declare constants for DOM elements */
+// collection of all buttons used in the game 
 const controlButtons = document.getElementsByTagName('button');
 //result message pop up
 const resultMessage = document.getElementById('result-msg');
@@ -27,6 +28,7 @@ const winMessage = [
     ["Rock crushes scissors", "Scissors cut paper", "Same selection"]
 ];
 const result = ["It is a tie !", "You win !!!", "Computer Win !!!"];
+
 /* Register event listener for all buttons after loading the DOM  */
 document.addEventListener('DOMContentLoaded', function () {
     for (let button of controlButtons) {
@@ -53,7 +55,7 @@ function resetGame() {
     userChoiceImage.alt = "empty image";
     computerChoiceImage.src = `assets/images/no-image.png`;
     computerChoiceImage.alt = "empty image";
-    resultMessage.innerHTML='';
+    resultMessage.innerHTML = '';
 }
 /**
  *This is main function which takes userChoice as a parameter
@@ -62,12 +64,12 @@ function resetGame() {
  * @param {*} userChoice 
  */
 function runGame(userChoice) {
-    setUserChoiceImage(userChoice); 
+    setUserChoiceImage(userChoice);
     let userChoiceIndex = computerChoiceList.indexOf(userChoice);
     let computerChoice = generateComputerChoice();
     setComputerChoiceImage(computerChoice);
-    let resultCode =checkResult(userChoiceIndex,computerChoice);
-    updateGameMessage(userChoiceIndex,computerChoice,resultCode);
+    let resultCode = checkResult(userChoiceIndex, computerChoice);
+    updateGameMessage(userChoiceIndex, computerChoice, resultCode);
     updateScore(resultCode);
 }
 /**
@@ -102,7 +104,7 @@ function generateComputerChoice() {
  * @param {*} userChoice 
  * @param {*} computerChoice 
  */
-function checkResult(userChoice,computerChoice){
+function checkResult(userChoice, computerChoice) {
     return winTable[userChoice][computerChoice];
 }
 /**
@@ -112,10 +114,10 @@ function checkResult(userChoice,computerChoice){
  * @param {*} computerChoice 
  * @param {*} resultCode 
  */
-function updateGameMessage(userChoice,computerChoice,resultCode){
+function updateGameMessage(userChoice, computerChoice, resultCode) {
     let message = winMessage[userChoice][computerChoice];
     let finalResult = result[resultCode];
-    resultMessage.innerHTML=`${message}     :  ${finalResult} `;
+    resultMessage.innerHTML = `${message}     :  ${finalResult} `;
 }
 /**
  * This function update the user and computer score
@@ -124,14 +126,14 @@ function updateGameMessage(userChoice,computerChoice,resultCode){
  * resultCode == 2 --> not update the computer score
  * @param {*} resultCode 
  */
-function updateScore(resultCode){
-    let userScores= parseInt(userScore.innerHTML);
-    let computerScores=parseInt(computerScore.innerText);
-    if(resultCode == 1){
+function updateScore(resultCode) {
+    let userScores = parseInt(userScore.innerHTML);
+    let computerScores = parseInt(computerScore.innerText);
+    if (resultCode == 1) {
         userScores++;
-    } else if(resultCode == 2){
+    } else if (resultCode == 2) {
         computerScores++;
     }
-    userScore.innerHTML=userScores;
-    computerScore.innerHTML=computerScores;
+    userScore.innerHTML = userScores;
+    computerScore.innerHTML = computerScores;
 }

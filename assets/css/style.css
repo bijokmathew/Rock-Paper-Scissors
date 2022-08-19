@@ -248,12 +248,12 @@ table {
 
 /* For small screens sizes from 300px wide and down */
 @media screen and (max-width:300px) {
-
+/* choice header */
     h3 {
 
         letter-spacing: 0;
     }
-
+/* score table title */
     .score-th {
         font-size: 16px;
         letter-spacing: 0;

@@ -193,6 +193,7 @@ The chosen option displays a humorous picture of the real choice.
 
 The Rule section gives an overview of the game rules.
 </details>
+
 ### Future Features
 
 - To add different level for the game and more options.
