@@ -197,8 +197,8 @@ The Rule section gives an overview of the game rules.
 ### Future Features
 
 - To add different level for the game and more options.
-- To ensure return and new visitors by sharing their high scores or victories on social media.
-- To storea player name and their higher score
+- To add an option for sharing their high scores or victories on social medias.
+- To store player name and their higher score
   
 [Back to top](#rock-paper-scissors)
 
